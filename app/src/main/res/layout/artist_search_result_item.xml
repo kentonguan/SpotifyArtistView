@@ -2,31 +2,34 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:focusable="true"
-    android:clickable="true"
     android:background="?android:attr/selectableItemBackground"
-    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal"
     android:weightSum="1">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_centerInParent="true"/>
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView"
-            android:layout_gravity="left"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="0dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView"
-            android:gravity="center_vertical|left"
-            android:layout_marginLeft="0dp"
-            android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/imageView"
-            android:layout_marginStart="@dimen/activity_horizontal_margin" />
+    <ImageButton
+        android:id="@+id/menu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"/>
 
 
 </RelativeLayout>
+

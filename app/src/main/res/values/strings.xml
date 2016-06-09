@@ -2,6 +2,8 @@
     <string name="app_name">SpotifyArtistView</string>
     <string name="app_label">SpotifyArtistView</string>
     <string name="search_hint">Search Artists Here</string>
+    <string name="menu_item_open_albums">Show Albums</string>
+    <string name="menu_item_open_web_page">Open Artist Page</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

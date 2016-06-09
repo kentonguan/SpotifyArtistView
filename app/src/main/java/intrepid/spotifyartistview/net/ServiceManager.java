@@ -6,6 +6,7 @@ import com.google.gson.GsonBuilder;
 
 import java.util.Map;
 
+import intrepid.spotifyartistview.Models.AlbumResponse;
 import intrepid.spotifyartistview.Models.ArtistResponse;
 import intrepid.spotifyartistview.Models.Artists;
 import okhttp3.OkHttpClient;
@@ -15,6 +16,7 @@ import retrofit2.Converter;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
+import retrofit2.http.Path;
 import retrofit2.http.Query;
 import retrofit2.http.QueryMap;
 import timber.log.Timber;
@@ -69,6 +71,9 @@ public class ServiceManager {
         public interface SpotifyService {
             @GET("v1/search")
             Call<ArtistResponse> getArtists(@Query("type") String type, @Query("query") String artistName);
+
+            @GET("artists/{id}/albums")
+            Call<AlbumResponse> getAlbumsByArtistID(@Path("id") String id);
         }
     }
 }

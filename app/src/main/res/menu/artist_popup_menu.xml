@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:showAsAction="always">
+    <item android:id="@+id/go_to_albums"
+          android:title="@string/menu_item_open_albums"/>
+    <item android:id="@+id/go_to_artist_web_page"
+          android:title="@string/menu_item_open_web_page"/>
+</menu>

@@ -21,13 +21,5 @@ public class ExternalUrls {
         return spotify;
     }
 
-    /**
-     *
-     * @param spotify
-     * The spotify
-     */
-    public void setSpotify(String spotify) {
-        this.spotify = spotify;
-    }
 
 }
